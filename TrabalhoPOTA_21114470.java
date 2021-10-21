@@ -19,15 +19,18 @@ public class TrabalhoPOTA_21114470{
 			//Reader reader = Files.newBufferedReader(Paths.get("arquivoDados.csv"));
 			//CSVReader  csv = new CSVReaderBuilder(reader).wikiSkipLines(1).build();
 		try{
-			File arquivo = new File("C:/Users/Cliente/Desktop/POTA/arquivoDados.csv");
-			Scanner sc = new Scanner(arquivo);
-			System.out.println(sc.nextLine());
-			while(sc.hasNext()){
-				System.out.println(sc.nextLine());
+			File arquivo = new File("C://Users//Cliente//Desktop//POTA//arquivoDados.txt");
+			FileReader fileReader = new FileReader(arquivo);
+			BufferedReader bufferReader = new BufferedReader(fileReader);
+		//	Scanner sc = new Scanner(arquivo);
+			String str;
+			System.out.println(arquivo);
+			while((str = bufferReader.readLine()) != null){
+				System.out.println(str);
 			}
 			sc.close();
 		}catch(Exception exc){
-			System.out.println(exc.getCause());
+			System.out.println("fsfdsfdss");
 		}
 
 
