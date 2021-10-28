@@ -18,4 +18,11 @@ class Pessoa {
 		this.telefone = telefone;
 		this.idade = idade;
 	}
+
+	@Override
+	public String toString() {
+		return "Pessoa [nome=" + nome + ", sexo=" + sexo + ", endereco=" + endereco + ", estado=" + estado + ", email="
+				+ email + ", telefone=" + telefone + ", idade=" + idade + "]";
+	}
+
 }
